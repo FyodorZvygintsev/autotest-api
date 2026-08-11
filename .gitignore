@@ -1,0 +1,11 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+venv312/
+
+# PyCharm / IntelliJ IDEA project files
+.idea/
