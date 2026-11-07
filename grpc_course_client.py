@@ -1,9 +1,11 @@
+"""gRPC-клиент: запрашивает курс через сгенерированный CourseServiceStub."""
 import grpc
 
 import course_service_pb2
 import course_service_pb2_grpc
 
 def run():
+    """Открывает канал к localhost:50051, вызывает GetCourse и печатает protobuf-ответ."""
     with grpc.insecure_channel("localhost:50051") as channel:
         stub = course_service_pb2_grpc.CourseServiceStub(channel)
 

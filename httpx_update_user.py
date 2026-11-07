@@ -1,3 +1,4 @@
+"""Изменение данных созданного пользователя авторизованным PATCH-запросом."""
 import httpx
 from tools.fakers import  get_random_email
 

@@ -1,9 +1,11 @@
+"""WebSocket-клиент: после отправки сообщения получает пять ответов сервера."""
 import asyncio
 
 import websockets
 
 
 async def client():
+    """Отправляет сообщение по WebSocket и последовательно читает пять ответов."""
     uri = "ws://localhost:8765"  # Адрес сервера
     async with websockets.connect(uri) as websocket:
         message = "Привет, сервер!"  # Сообщение, которое отправит клиент

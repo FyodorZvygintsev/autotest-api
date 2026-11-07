@@ -1,3 +1,4 @@
+"""Получение пользователя по ID через HTTPX с заголовком Authorization."""
 import httpx
 from tools.fakers import  get_random_email
 

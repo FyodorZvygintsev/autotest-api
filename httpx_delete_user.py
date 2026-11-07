@@ -1,3 +1,4 @@
+"""Прямые HTTP-запросы: создание пользователя, вход и удаление по его ID."""
 import httpx
 from tools.fakers import  get_random_email
 

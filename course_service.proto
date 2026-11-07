@@ -1,13 +1,17 @@
 syntax = "proto3";
 
+// Учебный сервис получения данных курса по идентификатору.
 service CourseService {
+  // Возвращает сведения об одном курсе.
   rpc GetCourse(GetCourseRequest) returns (GetCourseResponse);
 }
 
+// Параметры запроса: ID курса, который нужно получить.
 message GetCourseRequest {
   string course_id = 1;
 }
 
+// Ответ сервиса с ID, названием и описанием курса.
 message GetCourseResponse {
   string course_id = 1;
   string title = 2;
